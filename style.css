@@ -209,7 +209,7 @@ font-weight: bold;
   width: 300px; 
 
 }
-
+ 
 .button {
   background-color: #FFC26B;
   border: none;
@@ -237,6 +237,10 @@ font-weight: bold;
   margin-bottom: 0px;
   color:#01ECFF;
   margin-top: 15px;
+}
+
+.kvas {
+  
 }
 
 
