@@ -135,3 +135,108 @@ font-weight: bold;
    width: 85%;
    overflow: auto;
  }
+
+
+ .end{
+  height: 200px;
+  background-color: #4520AB;
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 0%;
+  position: relative;
+  color: #fff;
+}
+
+.container{
+  width: 1400px;
+  margin: auto;
+}
+
+.icon1{
+  width: 30.91px;
+  height: 25.45px;
+  margin-top: 20px;
+  margin-right:10px;
+}
+
+.icon2{
+  width: 12.36px;
+  height: 28px;
+  margin-top: 20px;
+  margin-right:10px;
+}
+
+.icon3{
+  width: 28.44px;
+  height: 28px;
+  margin-top: 20px;
+  margin-right:10px;
+}
+
+.icon4{
+  width: 34.63px;
+  height: 25.45px;
+  margin-top: 20px;
+  
+}
+
+.foot{
+  display: flex;
+}
+
+.information{
+  margin-right: 126px;
+}
+
+.footermenu{
+  margin-right: 126px;
+  margin-top: -35px;
+  
+}
+
+.email{
+  margin-top: -35px;
+  
+}
+
+.line{
+  display: flex;
+  justify-content: space-between;
+}
+
+.block_1{
+  margin-top: 15px;
+  width: 300px; 
+
+}
+
+.button {
+  background-color: #FFC26B;
+  border: none;
+  color: #4721AC;
+  padding: 12px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;  
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+
+.confirm{
+  margin-bottom: 0px;
+}
+.confirm1{
+  margin-bottom: 0px;
+  color:#01ECFF;
+}
+
+.confirm2{
+  margin-bottom: 0px;
+  color:#01ECFF;
+  margin-top: 15px;
+}
+
+
