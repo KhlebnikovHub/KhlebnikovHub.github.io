@@ -243,4 +243,60 @@ font-weight: bold;
   
 }
 
+@media (min-width: 768px) and (max-width: 1400px) {
+  header {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .logo {
+    flex-direction:unset;
+    margin-bottom: 0;
+  }
+ 
+  header {
+    height: 110px; 
+  }
+ 
+ .elbrus {
+   margin: 0;
+ }
+ 
+ .personal {
+   order: -1;
+   align-self: flex-end; 
+ }
+ 
+ }
+ 
+ @media (max-width: 767px) {
+   header {
+     flex-direction: column;
+     justify-content: space-evenly;
+   }
+   .logo {
+     flex-direction:unset;
+     margin-bottom: 0;
+   }
+  
+   header {
+     height: 110px; 
+   }
+  
+  .elbrus {
+    margin: 0;
+  }
+  
+  .personal {
+    order: -1;
+    align-self: flex-end; 
+  }
+  
+ .lenta {
+   flex-wrap: wrap; 
+ }
+ 
+  }
+ 
+ 
+
 
