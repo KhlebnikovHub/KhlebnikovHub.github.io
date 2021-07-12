@@ -265,6 +265,10 @@ font-weight: bold;
    order: -1;
    align-self: flex-end; 
  }
+
+ .lenta {
+  flex-wrap: wrap; 
+}
  
  }
  
