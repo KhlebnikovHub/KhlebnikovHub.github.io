@@ -203,10 +203,12 @@ font-weight: bold;
 }
 
 @media (max-width: 767px) {
+
   header {
     flex-direction: column;
     justify-content: space-evenly;
   }
+
   .logo {
     flex-direction:unset;
     margin-bottom: 0;
@@ -218,6 +220,12 @@ font-weight: bold;
  
  .elbrus {
    margin: 0;
+   font-size: 28px; 
+ }
+
+ .menu {
+  column-gap: 30px;
+  font-size: 14px;
  }
  
  .personal {
@@ -228,6 +236,11 @@ font-weight: bold;
 .lenta {
   flex-wrap: wrap; 
 }
+
+.personal {
+  font-size: 14px; 
+}
+
 
  }
 
