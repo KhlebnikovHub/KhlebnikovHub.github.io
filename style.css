@@ -11,6 +11,12 @@ main {
   margin: 50px 0px 0px 140px; 
 }
 
+@media (max-width: 767px) {
+  main {
+    margin: 20px 0px 0px 30px; 
+  }
+}
+
 body {
   color: #5200AE;
 }
@@ -155,7 +161,6 @@ font-weight: bold;
 }
 
 .container{
-  width: 1400px;
   margin: auto;
 }
 
