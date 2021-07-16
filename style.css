@@ -1,12 +1,37 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Stick&display=swap');
+
+html {
   font-size: 28px; 
+  background: radial-gradient(farthest-side ellipse at top left, rgb(22, 143, 199), #094655);
+}
+body {
+ 
 }
 
-h1 {
-  text-align:center;
+header {
+  position: relative; 
+  background: radial-gradient(circle farthest-corner at 100px 50px, rgb(22, 143, 199), #094655);
+  color: rgb(0, 243, 252); 
+  font-weight: unset;  
+  text-align: center;
   margin-bottom: 50px; 
-  font-size: 48px; 
+  font-size: 72px; 
+  font-family: 'Zen Tokyo Zoo', cursive;
+  box-shadow: 8px 30px 20px rgba(169, 233, 241, 0.493), -10px -10px 20px rgba(97, 235, 253, 0.726);
 }
+
+#anim {
+  opacity: 0;
+  height: 100%; 
+  position:absolute;
+  top:0; bottom:0; right:0;
+  width:100%;
+  background: radial-gradient(circle farthest-corner at 100px 50px, rgb(22, 143, 199), #094655);
+
+  animation: showHide 8s ease-in; 
+}
+
+
 
 section {
   display: flex;
@@ -15,7 +40,7 @@ section {
 }
 
 #dictionary {
-  border: 3px groove grey; 
+  border: 3px solid black; 
   box-sizing: border-box; 
   padding: 15px; 
   margin-top: 30px; 
@@ -24,7 +49,9 @@ section {
   display: flex;
   flex-direction: row; 
   justify-content: space-evenly;
-  background-color: cadetblue;   
+  background: linear-gradient(to top left, rgba(6, 46, 73, 0.753), rgb(59, 138, 148));   
+  border-radius: 20% 5%; 
+  font-family: 'Yomogi', cursive; 
   
 }
 
@@ -38,6 +65,8 @@ section {
 }
 
 #left, #right {
+  margin-top: 40px; 
+  margin-bottom: 40px; 
   width: 60%; 
   text-align: center; 
   display: flex;
@@ -51,14 +80,65 @@ section {
 
 
 #left div, #right div {
+  color: floralwhite;
   box-sizing: border-box;
   min-height: 50px;
   width: 100%;
   background-color:rgba(0, 197, 197, 0.473); 
-  border: 1px solid rgb(45, 0, 128); 
+  border: 2px solid rgb(45, 0, 128); 
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  border-radius: 5% / 10% ; 
+  animation-name: bounceIn1;
+  animation-duration: 1s; 
   
 }
+
+
+
+footer {
+  height: 100px; 
+}
+
+#new {
+  width: 500px; 
+  height: 30px; 
+  font-size:24px;
+}
+
+#add {
+    height: 35px; 
+    font-size:24px;
+    background: rgba(169, 233, 241, 0.616); 
+    
+  
+}
+
+
+
+@keyframes bounceIn1 {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes showHide {
+  0% {opacity: 100%; width:100%}
+  40% {width:0%}
+  60% {width:0%;}
+  80% {width:100%; opacity: 1.0;}
+  100% {opacity: 0%;}
+}
+
+
+
 
