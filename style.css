@@ -15,6 +15,7 @@ header {
   font-size: 66px; 
   font-family: 'Zen Tokyo Zoo', cursive;
   box-shadow: 8px 30px 20px rgba(169, 233, 241, 0.493), -10px -10px 20px rgba(97, 235, 253, 0.726);
+  border-radius: 200px; 
 }
 
 #anim {
@@ -24,7 +25,7 @@ header {
   top:0; bottom:0; right:0;
   width:100%;
   background: radial-gradient(circle farthest-corner at 100px 50px, rgb(22, 143, 199), #094655);
-
+  border-radius: 200px; 
   animation: showHide 8s ease-in; 
 }
 
@@ -172,9 +173,19 @@ footer {
     height: 40%; 
   }
 
+  header {
+    margin-bottom: 15px; 
+  }
+  
+  footer {
+    height: 10px; 
+  }
+
 }
 
-
+header {
+  font-size: 50px; 
+}
 
 @media (max-width: 767px) {
 
@@ -185,6 +196,7 @@ footer {
   height: 700px; 
   font-size: 18px;  
   width: 90%; 
+  margin-top: 20px; 
 }
 
 #blackbox {
@@ -218,6 +230,13 @@ header {
   
 }
 
+header {
+  margin-bottom: 15px; 
+}
+
+footer {
+  height: 10px; 
+}
 
 }
 
