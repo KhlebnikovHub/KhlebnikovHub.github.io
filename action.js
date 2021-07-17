@@ -15,17 +15,35 @@ left.append(newDiv1);
 }
 
 
-let button = document.getElementById("add");
+let button = document.getElementById("add");  
 let newValue = document.getElementById("new");
+let removeButton = document.getElementById("remove");
 button.addEventListener('click', function() {
  create(newValue.value);
 });
+removeButton.addEventListener('click', function() {
+  remove();
+ });
 
 
+function remove() {
+let child1 = document.querySelectorAll("#left div")
+let child2 = document.querySelectorAll("#right div");
 
-function translit(word){
-	var answer = '';
-	var converter = {
+for (let item of child1) {
+left.removeChild(item);
+}
+
+for (let item of child2) {
+right.removeChild(item);   
+}
+
+}
+
+
+function translit(before){
+	let after = '';
+	let transliter = {
 		'а': 'a',    'б': 'b',    'в': 'v',    'г': 'g',    'д': 'd',
 		'е': 'e',    'ё': 'e',    'ж': 'zh',   'з': 'z',    'и': 'i',
 		'й': 'y',    'к': 'k',    'л': 'l',    'м': 'm',    'н': 'n',
@@ -43,14 +61,14 @@ function translit(word){
 		'Э': 'E',    'Ю': 'Yu',   'Я': 'Ya'
 	};
  
-	for (var i = 0; i < word.length; ++i ) {
-		if (converter[word[i]] == undefined){
-			answer += word[i];
+	for (let i = 0; i < before.length; i++) {
+		if (transliter[before[i]] == undefined){
+			after += before[i];
 		} else {
-			answer += converter[word[i]];
+			after += transliter[before[i]];
 		}
 	}
  
-	return answer;
+	return after;
 }
 
