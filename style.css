@@ -23,11 +23,6 @@ header {
   animation-duration: 7s; 
 }
 
-@keyframes shadow {
-  from { box-shadow: 10px 0px 35px 0px rgb(15, 205, 230), -10px -10px 20px rgba(97, 235, 253, 0.849);}
-  to {box-shadow: 10px 15px 35px 5px rgb(15, 205, 230), -10px -10px 20px rgba(97, 235, 253, 0.849);}
-}
-
 
 #anim {
   opacity: 0;
@@ -96,7 +91,7 @@ header {
 }
 
 input {
-  padding: 5px;   
+  padding: 5px;  
 }
 
 section {
@@ -157,7 +152,7 @@ section {
   overflow: hidden;
   text-overflow: ellipsis;
   border-radius: 5% / 10% ; 
-  animation-name: bounceIn1;
+  animation-name: show;  
   animation-duration: 1s; 
   
 }
@@ -201,20 +196,20 @@ footer {
 
 @keyframes bounceIn1 {
   0% {
-    transform: scale(0.1);
     opacity: 0;
   }
-  60% {
-    transform: scale(1.1);
-    opacity: 1;
-  }
   100% {
-    transform: scale(1);
+    opacity: 1;
   }
 }
 
+@keyframes shadow {
+  from { box-shadow: 10px 0px 35px 0px rgb(15, 205, 230), -10px -10px 20px rgba(97, 235, 253, 0.849);}
+  to {box-shadow: 10px 15px 35px 5px rgb(15, 205, 230), -10px -10px 20px rgba(97, 235, 253, 0.849);}
+}
+
 @keyframes showHide {
-  0% {opacity: 100%; width:100%}
+  0% {opacity: 100%; width:100%;}
   30% {width:0%;}
   50% {width:100%; opacity: 0}
   50% { opacity: 1.0;}
@@ -222,14 +217,23 @@ footer {
 }
 
 @keyframes show {
-  0% { opacity: 1.0}
-  50% {opacity: 0}
-  100% {opacity: 1.0}
+  0% { opacity: 0;}
+  100% {opacity: 1.0;}
+}
+
+@keyframes translating {
+  0%   { transform: translate(0, 0); }
+  25%  { transform: translate(240px, 0); }
+  50%  { transform: translate(240px, 140px); }
+  75%  { transform: translate(0, 140px); }
+  100% { transform: translate(0, 0); }
 }
 
 section #add, section #remove {
   font-size: 24px; 
 }
+
+
 
 @media (min-width: 768px) and (max-width: 1400px) {
 
@@ -339,6 +343,4 @@ section #add {
 
 
 }
-
-
 
