@@ -1,0 +1,132 @@
+body {
+  background-color: blue;  
+}
+.mountains {
+  width: 100%; 
+}
+
+.main {
+  top: 250px; 
+  position: relative;
+}
+
+.block1 {
+  background-color: red;  
+  width: 50px;
+  height: 8px;
+  position: absolute;
+  bottom: 50px;
+  left: 185px; 
+
+}
+
+.block2 {
+  background-color: red;  
+  width: 50px;
+  height: 8px;
+  position: absolute;
+  bottom: 160px;
+  left: 300px; 
+}
+
+.block3 {
+  background-color: red;  
+  width: 50px;
+  height: 8px;
+  position: absolute;
+  bottom: 280px;
+  left: 430px; 
+}
+
+.block3 {
+  background-color: red;  
+  width: 50px;
+  height: 8px;
+  position: absolute;
+  bottom: 280px;
+  left: 430px; 
+}
+
+.block4 {
+  background-color: red;  
+  width: 50px;
+  height: 8px;
+  position: absolute;
+  bottom: 330px;
+  left: 535px; 
+}
+
+.block5 {
+  background-color: red;  
+  width: 50px;
+  height: 8px;
+  position: absolute;
+  bottom: 370px;
+  left: 660px; 
+}
+
+.block6 {
+  background-color: red;  
+  width: 50px;
+  height: 8px;
+  position: absolute;
+  bottom: 450px;
+  left: 750px; 
+}
+
+#hero {
+  position: absolute; 
+  top: 5px; 
+  left: 0;     
+  
+}
+
+.climber {
+  width: 90px;
+  height: 150px;  
+}
+
+.rotation {
+  animation-name: rotation;
+  animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+@keyframes rotation {
+  0% {
+    transform:rotate(0deg);
+  }
+  100% {
+    transform:rotate(360deg);
+  }
+}
+
+h2 {
+  position: absolute;  
+  color: rgba(255, 206, 70, 0.904);
+  top: 50px;
+  right: 50px;   
+}
+
+#flagimg {
+  position: absolute;  
+  bottom: 10px;
+  right: -30px;   
+  width: 200px;
+  height: 200px; 
+}
+
+.godown {
+  animation-name: move;
+  animation-duration: 3s;
+}
+
+@keyframes move {
+  0% {
+      transform: translate3d(0, 0, 0);
+  }
+  100% {
+      transform: translate3d(-750px, 260px, 0);
+  }
+}
